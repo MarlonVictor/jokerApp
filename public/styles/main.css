@@ -2,7 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
 
-body {
-  @apply font-poppins;
+  --nav-height: 7.2rem;
+}
+
+.wrapper {
+  width: 37.5rem;
+  @apply mx-auto px-10;
+}
+
+header::before {
+  content: '';
+  height: calc(96rem + var(--nav-height));
+
+  @apply bg-primary-light block w-full absolute top-0 left-0 -z-10;
+}
+
+i {
+  font-size: 2.25rem;
+}
+
+body.menu-expanded {
+  overflow: hidden;
+}
+
+body.menu-expanded > :not(nav) {
+  display: none;
+}
+
+.menu,
+[data-close],
+body.menu-expanded [data-open] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded [data-close] {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menu-expanded .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0f0;
+
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: var(--nav-height);
+}
+
+body.menu-expanded nav {
+  position: relative;
+}
+
+
+body.menu-expanded .logo,
+body.menu-expanded button {
+  position: relative;
+  z-index: 100;
+}
+
+body.menu-expanded .logo path {
+  fill: white;
+}
+
+body.menu-expanded button path {
+  stroke: white;
 }

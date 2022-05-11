@@ -12,11 +12,81 @@
 
   <!-- Main styles -->
   <link rel="stylesheet" href="./public/styles/main.css">
+
+  <!-- SVG icons -->
+  <script src="https://unpkg.com/phosphor-icons"></script>
+
   <title>Joker App</title>
 </head>
 
-<body class="bg-primary">
-  <h1 class="text-3xl font-semibold text-white text-center">NLW Return</h1>
+<body class="font-poppins text-center">
+  <nav class="flex fixed top-0 left-2/4 -translate-x-2/4 transition-colors" style="height: var(--nav-height)">
+    <div class="wrapper flex items-center justify-between">
+      <a class="logo" href="#">{{ logo }}</a>
+
+      <div class="menu">
+        <ul class="flex flex-col gap-20 mt-24 font-bold text-4xl text-white">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+
+        <a class="bg-white rounded-3xl font-bold text-3xl uppercase text-primary inline-block py-4 px-8 mt-20 mb-32" href="#">Agende sua consulta</a>
+
+        <ul class="flex items-center justify-center gap-12 text-white">
+          <li><a href="https://instagram.com/">
+            <i class="ph-instagram-logo"></i>
+          </a></li>
+          <li><a href="https://facebook.com/">
+            <i class="ph-facebook-logo"></i>
+          </a></li>
+          <li><a href="https://twitter.com/">
+            <i class="ph-twitter-logo"></i>
+          </a></li>
+        </ul>
+      </div>
+  
+      <button data-open>
+        <i class="ph-list"></i>
+      </button>
+
+      <button data-close>
+        <i class="ph-x"></i>
+      </button>
+    </div>
+  </nav>
+
+  <header class="wrapper mx-auto mt-16" style="margin-top: calc(4.1rem + var(--nav-height))">
+    <h4 class="text-2xl text-primary mb-6">BOAS-VINDAS A DOCTORCARE 👋</h4>
+    <h1 class="text-5xl text-gray-dark mb-10">Assistência médica simplificada para todos</h1>
+    <p class="text-3xl font-normal text-gray mb-12">Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
+
+    <button class="bg-primary rounded-3xl mb-24 h-24 px-8 text-gray-light tracking-wider text-2xl font-bold uppercase flex items-center justify-center gap-6 mx-auto">
+      <i class="ph-whatsapp-logo"></i>
+      Agende sua consulta 
+    </button>
+
+    <img
+      src="/assets/foto.png"
+      alt="Mulher negra vestindo moletom verde e sorrindo"
+      class="w-96 block mx-auto"
+    />
+
+    <div class="p-16 mx-auto bg-gray-light border border-primary-light rounded-3xl flex flex-col justify-center gap-24" style="width: 32.7rem">
+      <div>
+        <h3 class="text-7xl text-gray-dark mb-2">+3.500</h3>
+        <p class="m-0 text-primary text-2xl">Pacientes atendidos</p>
+      </div>
+      <div>
+        <h3 class="text-7xl text-gray-dark mb-2">+15</h3>
+        <p class="m-0 text-primary text-2xl">Especialistas disponíveis</p>
+      </div>
+      <div>
+        <h3 class="text-7xl text-gray-dark mb-2">+10</h3>
+        <p class="m-0 text-primary text-2xl">Anos no mercado</p>
+      </div>
+    </div>
+  </header>
 
   <script type="module" src="/public/js/main.js"></script>
 </body>
