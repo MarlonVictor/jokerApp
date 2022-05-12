@@ -6,6 +6,14 @@ body.menu-expanded > :not(nav) {
     @apply hidden;
 }
 
+[data-close] {
+    @apply hidden;
+}
+
+body.menu-expanded [data-close] {
+    @apply block;
+}
+
 .menu,
 [data-close],
 body.menu-expanded [data-open] {
@@ -18,7 +26,7 @@ body.menu-expanded [data-close] {
 }
 
 body.menu-expanded .menu {
-    @apply fixed top-0 left-0 bg-primary w-screen h-screen translate-y-0;
+    @apply fixed top-0 left-0 bg-primary w-screen h-screen;
     padding-top: var(--nav-height);
 }
 

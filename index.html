@@ -24,14 +24,14 @@
     <div class="wrapper flex items-center justify-between">
       <a class="logo w-full text-left" href="#">{{ logo }}</a>
 
-      <div class="menu transition-transform duration-300 translate-y-full">
+      <div class="menu transition-opacity duration-500">
         <ul class="flex flex-col gap-12 mt-20 font-bold text-2xl font-semibold text-white">
           <li><a href="#home">Início</a></li>
           <li><a href="#services">Serviços</a></li>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="#about">Sobre</a></li>
         </ul>
 
-        <a class="bg-white rounded-3xl font-semibold text-lg uppercase text-primary inline-block py-4 px-8 mt-12 mb-20" href="#">Agende sua consulta</a>
+        <a class="bg-white rounded-3xl font-semibold text-lg uppercase text-primary inline-block py-4 px-8 mt-12 mb-20">Agende sua consulta</a>
 
         <ul class="flex items-center justify-center gap-12 text-white">
           <li class="hover:scale-105 transition-transform">
@@ -62,7 +62,7 @@
     </div>
   </nav>
 
-  <header id="home" style="padding-top: calc(2.5rem + var(--nav-height))">
+  <section id="home" style="padding-top: calc(2.5rem + var(--nav-height))">
     <div class="wrapper mx-auto">
       <h4 class="text-sm font-bold text-primary mb-6">BOAS-VINDAS A DOCTORCARE 👋</h4>
       <h1 class="text-4xl text-gray-dark mb-6">Assistência médica simplificada para todos</h1>
@@ -74,7 +74,7 @@
       </button>
   
       <img
-        src="/assets/foto.png"
+        src="/assets/home-image.png"
         alt="Mulher negra vestindo moletom verde e sorrindo"
         class="w-64 block mx-auto"
       />
@@ -94,7 +94,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
   <section id="services">
     <div class="wrapper pb-10">
@@ -108,38 +108,53 @@
           <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
 
           <h3 class="my-4 text-2xl font-semibold">Problemas digestivos</h3>
-          <p class="text-base text-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
         </div>
         <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
           <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
 
           <h3 class="my-4 text-2xl font-semibold">Saúde Hormonal</h3>
-          <p class="text-base text-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
         </div>
         <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
           <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
 
           <h3 class="my-4 text-2xl font-semibold">Bem-estar mental</h3>
-          <p class="text-base text-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
         </div>
         <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
           <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
 
           <h3 class="my-4 text-2xl font-semibold">Cuidados Pediátricos</h3>
-          <p class="text-base text-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
         </div>
         <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
           <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
 
           <h3 class="my-4 text-2xl font-semibold">Autoimune e Inflamação</h3>
-          <p class="text-base text-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
         </div>
         <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
           <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
 
           <h3 class="my-4 text-2xl font-semibold">Saúde do Coração</h3>
-          <p class="text-base text-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="text-left bg-white">
+    <div class="wrapper">
+      <header>
+        <h4 class="text-sm font-bold tracking-wider uppercase text-primary mb-4">Sobre nós</h4>
+        <h2 class="text-3xl font-semibold text-gray-dark mb-6">Entenda quem somos e por que existimos</h2>
+      </header>
+
+      <div class="content">
+        <p class="mt-6 mb-14">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+        
+        <img class="rounded-xl" src="assets/about-image.png" alt="Doutor feliz segurando prancheta com pacientes" />
       </div>
     </div>
   </section>

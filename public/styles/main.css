@@ -37,3 +37,7 @@ nav {
 section {
   padding: 100px 0;
 }
+
+section p {
+  @apply text-base text-gray;
+}

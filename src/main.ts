@@ -32,7 +32,10 @@ const scrollRevealElements = `
     #home .stats,
     #services,
     #services header,
-    #services .cards
+    #services .cards,
+    #about,
+    #about header,
+    #about .content
 `
 
 ScrollReveal(scrollRevealConfig).reveal(scrollRevealElements)
