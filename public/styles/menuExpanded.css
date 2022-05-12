@@ -1,0 +1,42 @@
+body.menu-expanded {
+    @apply overflow-hidden;
+}
+
+body.menu-expanded > :not(nav) {
+    @apply hidden;
+}
+
+.menu,
+[data-close],
+body.menu-expanded [data-open] {
+    @apply opacity-0 invisible;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded [data-close] {
+    @apply opacity-100 visible;
+}
+
+body.menu-expanded .menu {
+    @apply fixed top-0 left-0 bg-primary w-screen h-screen translate-y-0;
+    padding-top: var(--nav-height);
+}
+
+body.menu-expanded nav {
+    @apply relative;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded button {
+    @apply relative;
+    z-index: 100;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded [data-close] {
+    @apply text-white;
+}
+
+body.menu-expanded button path {
+    @apply stroke-white;
+}

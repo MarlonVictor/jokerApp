@@ -19,75 +19,134 @@
   <title>Joker App</title>
 </head>
 
-<body class="font-poppins text-center">
-  <nav class="flex fixed top-0 left-2/4 -translate-x-2/4 transition-colors" style="height: var(--nav-height)">
+<body class="font-poppins text-center bg-primary-lighter">
+  <nav class="flex fixed top-0 w-full left-2/4 -translate-x-2/4 transition-colors" style="height: var(--nav-height)">
     <div class="wrapper flex items-center justify-between">
-      <a class="logo" href="#">{{ logo }}</a>
+      <a class="logo w-full text-left" href="#">{{ logo }}</a>
 
-      <div class="menu">
-        <ul class="flex flex-col gap-20 mt-24 font-bold text-4xl text-white">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Serviços</a></li>
+      <div class="menu transition-transform duration-300 translate-y-full">
+        <ul class="flex flex-col gap-12 mt-20 font-bold text-2xl font-semibold text-white">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#services">Serviços</a></li>
           <li><a href="#">Sobre</a></li>
         </ul>
 
-        <a class="bg-white rounded-3xl font-bold text-3xl uppercase text-primary inline-block py-4 px-8 mt-20 mb-32" href="#">Agende sua consulta</a>
+        <a class="bg-white rounded-3xl font-semibold text-lg uppercase text-primary inline-block py-4 px-8 mt-12 mb-20" href="#">Agende sua consulta</a>
 
         <ul class="flex items-center justify-center gap-12 text-white">
-          <li><a href="https://instagram.com/">
-            <i class="ph-instagram-logo"></i>
-          </a></li>
-          <li><a href="https://facebook.com/">
-            <i class="ph-facebook-logo"></i>
-          </a></li>
-          <li><a href="https://twitter.com/">
-            <i class="ph-twitter-logo"></i>
-          </a></li>
+          <li class="hover:scale-105 transition-transform">
+            <a href="https://instagram.com/">
+              <i class="ph-instagram-logo"></i>
+            </a>
+          </li>
+          <li class="hover:scale-105 transition-transform">
+            <a href="https://facebook.com/">
+              <i class="ph-facebook-logo"></i>
+            </a>
+          </li>
+          <li class="hover:scale-105 transition-transform">
+            <a href="https://twitter.com/">
+              <i class="ph-twitter-logo"></i>
+            </a>
+          </li>
         </ul>
       </div>
   
-      <button data-open>
+      <button area-label="Abrir menu" data-open>
         <i class="ph-list"></i>
       </button>
 
-      <button data-close>
+      <button area-label="Fechar menu" data-close>
         <i class="ph-x"></i>
       </button>
     </div>
   </nav>
 
-  <header class="wrapper mx-auto mt-16" style="margin-top: calc(4.1rem + var(--nav-height))">
-    <h4 class="text-2xl text-primary mb-6">BOAS-VINDAS A DOCTORCARE 👋</h4>
-    <h1 class="text-5xl text-gray-dark mb-10">Assistência médica simplificada para todos</h1>
-    <p class="text-3xl font-normal text-gray mb-12">Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
-
-    <button class="bg-primary rounded-3xl mb-24 h-24 px-8 text-gray-light tracking-wider text-2xl font-bold uppercase flex items-center justify-center gap-6 mx-auto">
-      <i class="ph-whatsapp-logo"></i>
-      Agende sua consulta 
-    </button>
-
-    <img
-      src="/assets/foto.png"
-      alt="Mulher negra vestindo moletom verde e sorrindo"
-      class="w-96 block mx-auto"
-    />
-
-    <div class="p-16 mx-auto bg-gray-light border border-primary-light rounded-3xl flex flex-col justify-center gap-24" style="width: 32.7rem">
-      <div>
-        <h3 class="text-7xl text-gray-dark mb-2">+3.500</h3>
-        <p class="m-0 text-primary text-2xl">Pacientes atendidos</p>
-      </div>
-      <div>
-        <h3 class="text-7xl text-gray-dark mb-2">+15</h3>
-        <p class="m-0 text-primary text-2xl">Especialistas disponíveis</p>
-      </div>
-      <div>
-        <h3 class="text-7xl text-gray-dark mb-2">+10</h3>
-        <p class="m-0 text-primary text-2xl">Anos no mercado</p>
+  <header id="home" style="padding-top: calc(2.5rem + var(--nav-height))">
+    <div class="wrapper mx-auto">
+      <h4 class="text-sm font-bold text-primary mb-6">BOAS-VINDAS A DOCTORCARE 👋</h4>
+      <h1 class="text-4xl text-gray-dark mb-6">Assistência médica simplificada para todos</h1>
+      <p class="text-lg font-normal text-gray mb-8">Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
+  
+      <button class="bg-primary rounded-3xl mb-24 h-14 px-8 text-gray-light tracking-wider text-sm font-semibold uppercase flex items-center justify-center gap-4 mx-auto">
+        <i class="ph-whatsapp-logo"></i>
+        Agende sua consulta 
+      </button>
+  
+      <img
+        src="/assets/foto.png"
+        alt="Mulher negra vestindo moletom verde e sorrindo"
+        class="w-64 block mx-auto"
+      />
+  
+      <div class="stats p-10 mx-auto bg-gray-light border border-primary-light rounded-lg flex flex-col justify-center gap-16" style="width: 20.5rem">
+        <div>
+          <h3 class="text-5xl font-semibold text-gray-dark mb-2">+3.500</h3>
+          <p class="m-0 text-primary text-base">Pacientes atendidos</p>
+        </div>
+        <div>
+          <h3 class="text-5xl font-semibold text-gray-dark mb-2">+15</h3>
+          <p class="m-0 text-primary text-base">Especialistas disponíveis</p>
+        </div>
+        <div>
+          <h3 class="text-5xl font-semibold text-gray-dark mb-2">+10</h3>
+          <p class="m-0 text-primary text-base">Anos no mercado</p>
+        </div>
       </div>
     </div>
   </header>
 
+  <section id="services">
+    <div class="wrapper pb-10">
+      <header>
+        <h4 class="text-sm font-bold tracking-wider uppercase text-primary mb-4">Serviços</h4>
+        <h2 class="text-3xl font-semibold text-gray-dark mb-16">Como podemos ajudá-lo a se sentir melhor?</h2>
+      </header>
+
+      <div class="cards flex flex-col gap-8">
+        <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
+          <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
+
+          <h3 class="my-4 text-2xl font-semibold">Problemas digestivos</h3>
+          <p class="text-base text-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+        </div>
+        <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
+          <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
+
+          <h3 class="my-4 text-2xl font-semibold">Saúde Hormonal</h3>
+          <p class="text-base text-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+        </div>
+        <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
+          <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
+
+          <h3 class="my-4 text-2xl font-semibold">Bem-estar mental</h3>
+          <p class="text-base text-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+        </div>
+        <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
+          <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
+
+          <h3 class="my-4 text-2xl font-semibold">Cuidados Pediátricos</h3>
+          <p class="text-base text-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+        </div>
+        <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
+          <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
+
+          <h3 class="my-4 text-2xl font-semibold">Autoimune e Inflamação</h3>
+          <p class="text-base text-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+        </div>
+        <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
+          <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
+
+          <h3 class="my-4 text-2xl font-semibold">Saúde do Coração</h3>
+          <p class="text-base text-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- scrollrevealjs -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
   <script type="module" src="/public/js/main.js"></script>
 </body>
 

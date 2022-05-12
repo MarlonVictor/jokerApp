@@ -9,9 +9,30 @@ document.body.onscroll = () => {
 }
 
 
-// Nav toggle
+// Nav Toggle
 const btnOpenNav = document.querySelector('[data-open]')
 const btnCloseNav = document.querySelector('[data-close]')
+const navLinks = document.querySelectorAll('a[href^="#"]')
 
 btnOpenNav?.addEventListener('click', () => document.body.classList.add('menu-expanded'))
 btnCloseNav?.addEventListener('click', () => document.body.classList.remove('menu-expanded'))
+navLinks?.forEach(link => link.addEventListener('click', () => document.body.classList.remove('menu-expanded')))
+
+
+// Init Scroll Reveal Animation
+const scrollRevealConfig = {
+    origin: 'top',
+    distance: '60px',
+    duration: 700,
+}
+
+const scrollRevealElements = `
+    #home, 
+    #home img, 
+    #home .stats,
+    #services,
+    #services header,
+    #services .cards
+`
+
+ScrollReveal(scrollRevealConfig).reveal(scrollRevealElements)
