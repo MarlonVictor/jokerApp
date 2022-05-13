@@ -31,7 +31,7 @@
           <li><a href="#about">Sobre</a></li>
         </ul>
 
-        <a class="bg-white rounded-3xl font-semibold text-lg uppercase text-primary inline-block py-4 px-8 mt-12 mb-20">Agende sua consulta</a>
+        <a class="bg-white rounded-3xl font-semibold text-lg uppercase text-primary inline-block py-3 px-8 mt-12 mb-20 w-fit" href="#contact">Agende sua consulta</a>
 
         <ul class="flex items-center justify-center gap-12 text-white">
           <li class="hover:scale-105 transition-transform">
@@ -68,10 +68,10 @@
       <h1 class="text-4xl text-gray-dark mb-6">Assistência médica simplificada para todos</h1>
       <p class="text-lg font-normal text-gray mb-8">Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
   
-      <button class="bg-primary rounded-3xl mb-24 h-14 px-8 text-gray-light tracking-wider text-sm font-semibold uppercase flex items-center justify-center gap-4 mx-auto">
+      <a href="#contact" class="bg-primary rounded-3xl mb-24 py-3 px-8 text-gray-light tracking-wider text-sm font-semibold uppercase flex items-center justify-center gap-4 mx-auto w-fit hover:bg-primary-dark transition-colors">
         <i class="ph-whatsapp-logo"></i>
         Agende sua consulta 
-      </button>
+      </a>
   
       <img
         src="/assets/home-image.png"
@@ -159,9 +159,37 @@
     </div>
   </section>
 
+  <section id="contact" class="text-left">
+    <div class="wrapper">
+      <header class="mb-8">
+        <h2 class="text-3xl font-semibold text-gray-dark mb-6">Entre em contato com a gente!</h2>
+      </header>
+
+      <div class="content">
+        <ul class="flex flex-col gap-4">
+          <li class="flex items-center gap-2 font-normal text-base text-gray">
+            <i class="ph-map-pin text-primary"></i>
+            R. Amauri Souza, 346
+          </li>
+          <li class="flex items-center gap-2 font-normal text-base text-gray">
+            <i class="ph-envelope-simple text-primary"></i>
+            contato@doctorcare.com
+           </li>
+        </ul>
+
+        <a href="https://wa.me/5521981625423" target="_blank" class="bg-primary rounded-3xl mb-24 py-3 px-8 text-gray-light tracking-wider text-sm font-semibold uppercase flex items-center justify-center gap-4 mt-8 w-fit hover:bg-primary-dark transition-colors">
+          <i class="ph-whatsapp-logo"></i>
+          Agende sua consulta
+        </a>
+
+        <img class="rounded-xl" src="assets/contact-image.png" alt="Homem negro com moletom bege mexendo no celular e sorrindo" />
+      </div>
+    </div>
+  </section>
+
   <!-- scrollrevealjs -->
   <script src="https://unpkg.com/scrollreveal"></script>
-  
+
   <script type="module" src="/public/js/main.js"></script>
 </body>
 

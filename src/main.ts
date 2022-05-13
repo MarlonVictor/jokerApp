@@ -35,7 +35,10 @@ const scrollRevealElements = `
     #services .cards,
     #about,
     #about header,
-    #about .content
+    #about .content,
+    #contact,
+    #contact header,
+    #contact .content
 `
 
 ScrollReveal(scrollRevealConfig).reveal(scrollRevealElements)

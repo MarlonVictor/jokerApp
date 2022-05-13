@@ -21,5 +21,5 @@ var scrollRevealConfig = {
     distance: '60px',
     duration: 700
 };
-var scrollRevealElements = "\n    #home, \n    #home img, \n    #home .stats,\n    #services,\n    #services header,\n    #services .cards,\n    #about,\n    #about header,\n    #about .content\n";
+var scrollRevealElements = "\n    #home, \n    #home img, \n    #home .stats,\n    #services,\n    #services header,\n    #services .cards,\n    #about,\n    #about header,\n    #about .content,\n    #contact,\n    #contact header,\n    #contact .content\n";
 ScrollReveal(scrollRevealConfig).reveal(scrollRevealElements);
