@@ -1,11 +1,18 @@
-// Nav Animation
+// Scroll Animation
 const navigationElement = document.querySelector('nav')
 const navigationClasses = ['w-screen', 'bg-primary', 'text-white']
+
+const backToTopButton = document.querySelector('#backToTop')
+const backToTopClass = 'show'
 
 document.body.onscroll = () => {
     scrollY > 50 
         ? navigationElement?.classList.add(...navigationClasses)
         : navigationElement?.classList.remove(...navigationClasses)
+
+    scrollY > 500 
+        ? backToTopButton?.classList.add(backToTopClass)
+        : backToTopButton?.classList.remove(backToTopClass)
 }
 
 

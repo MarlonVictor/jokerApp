@@ -41,3 +41,7 @@ section {
 section p {
   @apply text-base text-gray;
 }
+
+a.show {
+  @apply opacity-80 visible translate-y-0;
+}

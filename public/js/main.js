@@ -1,12 +1,17 @@
 "use strict";
-// Nav Animation
+// Scroll Animation
 var navigationElement = document.querySelector('nav');
 var navigationClasses = ['w-screen', 'bg-primary', 'text-white'];
+var backToTopButton = document.querySelector('#backToTop');
+var backToTopClass = 'show';
 document.body.onscroll = function () {
     var _a, _b;
     scrollY > 50
         ? navigationElement === null || navigationElement === void 0 ? void 0 : (_a = navigationElement.classList).add.apply(_a, navigationClasses)
         : navigationElement === null || navigationElement === void 0 ? void 0 : (_b = navigationElement.classList).remove.apply(_b, navigationClasses);
+    scrollY > 500
+        ? backToTopButton === null || backToTopButton === void 0 ? void 0 : backToTopButton.classList.add(backToTopClass)
+        : backToTopButton === null || backToTopButton === void 0 ? void 0 : backToTopButton.classList.remove(backToTopClass);
 };
 // Nav Toggle
 var btnOpenNav = document.querySelector('[data-open]');

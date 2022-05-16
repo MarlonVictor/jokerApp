@@ -26,12 +26,12 @@
 
       <div class="menu transition-opacity duration-500">
         <ul class="flex flex-col gap-12 mt-20 font-bold text-2xl font-semibold text-white">
-          <li><a href="#home">Início</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#about">Sobre</a></li>
+          <li class="hover:scale-105 transition-transform"><a href="#home">Início</a></li>
+          <li class="hover:scale-105 transition-transform"><a href="#services">Serviços</a></li>
+          <li class="hover:scale-105 transition-transform"><a href="#about">Sobre</a></li>
         </ul>
 
-        <a class="bg-white rounded-3xl font-semibold text-lg uppercase text-primary inline-block py-3 px-8 mt-12 mb-20 w-fit" href="#contact">Agende sua consulta</a>
+        <a class="bg-white rounded-3xl font-semibold text-lg uppercase text-primary inline-block py-3 px-8 mt-12 mb-20 w-fit hover:bg-primary hover:text-white border transition-colors" href="#contact">Agende sua consulta</a>
 
         <ul class="flex items-center justify-center gap-12 text-white">
           <li class="hover:scale-105 transition-transform">
@@ -186,6 +186,37 @@
       </div>
     </div>
   </section>
+
+  <footer class="bg-primary py-14 text-left">
+    <div class="wrapper">
+      <a class="logo w-full mb-7 inline-block text-white" href="#">{{ logo }}</a>
+
+      <p class="text-primary-light mb-1">©2022 Beautysalon.</p>
+      <p class="text-primary-light mb-8">Todos os direitos reservados.</p>
+  
+      <ul class="flex items-center justify-start gap-12 text-white">
+        <li class="hover:scale-105 transition-transform">
+          <a href="https://instagram.com/">
+            <i class="ph-instagram-logo"></i>
+          </a>
+        </li>
+        <li class="hover:scale-105 transition-transform">
+          <a href="https://facebook.com/">
+            <i class="ph-facebook-logo"></i>
+          </a>
+        </li>
+        <li class="hover:scale-105 transition-transform">
+          <a href="https://twitter.com/">
+            <i class="ph-twitter-logo"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <a id="backToTop" href="#" class="bg-primary fixed bottom-5 right-5 rounded-full w-10 h-10 grid place-items-center opacity-0 invisible transition-all translate-y-11 hover:bg-primary-dark hover:opacity-100">
+    <i class="ph-arrow-up text-xl text-white"></i>
+  </a>
 
   <!-- scrollrevealjs -->
   <script src="https://unpkg.com/scrollreveal"></script>
