@@ -8,7 +8,7 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
 
   <!-- Main styles -->
   <link rel="stylesheet" href="./public/styles/main.css">
@@ -33,7 +33,7 @@
 
         <a class="bg-white rounded-3xl font-semibold text-lg uppercase text-primary inline-block py-3 px-8 mt-12 mb-20 w-fit hover:bg-primary hover:text-white border transition-colors lg:m-0 lg:px-6 lg:py-2 lg:text-sm lg:bg-transparent lg:text-primary" href="#contact">Agende sua consulta</a>
 
-        <ul class="flex items-center justify-center gap-12 text-white md:hidden">
+        <ul class="flex items-center justify-center gap-12 text-white lg:hidden">
           <li class="hover:scale-105 transition-transform">
             <a href="https://instagram.com/">
               <i class="ph-instagram-logo"></i>
@@ -63,23 +63,27 @@
   </nav>
 
   <section id="home" style="padding-top: calc(2.5rem + var(--nav-height))">
-    <div class="wrapper mx-auto">
-      <h4 class="text-sm font-bold text-primary mb-6">BOAS-VINDAS A DOCTORCARE 👋</h4>
-      <h1 class="text-4xl text-gray-dark mb-6">Assistência médica simplificada para todos</h1>
-      <p class="text-lg font-normal text-gray mb-8">Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
+    <div class="wrapper mx-auto lg:grid lg:grid-cols-2">
+      <div class="col-start-1 lg:text-left">
+        <h4 class="text-sm font-bold text-primary mb-6">BOAS-VINDAS A DOCTORCARE 👋</h4>
+        <h1 class="text-4xl text-gray-dark mb-6 lg:text-5xl lg:font-semibold">Assistência médica simplificada para todos</h1>
+        <p class="text-lg font-normal text-gray mb-8">Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
+    
+        <a href="#contact" class="bg-primary rounded-3xl mb-24 py-3 px-8 text-gray-light tracking-wider text-sm font-semibold uppercase flex items-center justify-center gap-4 mx-auto w-fit hover:bg-primary-dark transition-colors lg:m-0">
+          <i class="ph-whatsapp-logo"></i>
+          Agende sua consulta 
+        </a>
+      </div>
+
+      <div class="col-start-2">
+        <img
+          src="/assets/home-image.png"
+          alt="Mulher negra vestindo moletom verde e sorrindo"
+          class="w-64 block mx-auto lg:w-96"
+        />
+      </div>
   
-      <a href="#contact" class="bg-primary rounded-3xl mb-24 py-3 px-8 text-gray-light tracking-wider text-sm font-semibold uppercase flex items-center justify-center gap-4 mx-auto w-fit hover:bg-primary-dark transition-colors">
-        <i class="ph-whatsapp-logo"></i>
-        Agende sua consulta 
-      </a>
-  
-      <img
-        src="/assets/home-image.png"
-        alt="Mulher negra vestindo moletom verde e sorrindo"
-        class="w-64 block mx-auto"
-      />
-  
-      <div class="stats p-10 mx-auto bg-gray-light border border-primary-light rounded-lg flex flex-col justify-center gap-16">
+      <div class="stats p-10 mx-auto bg-gray-light border border-primary-light rounded-lg flex flex-col justify-center gap-16 lg:col-span-2 lg:w-full lg:grid lg:grid-cols-3 lg:gap-0">
         <div>
           <h3 class="text-5xl font-semibold text-gray-dark mb-2">+3.500</h3>
           <p class="m-0 text-primary text-base">Pacientes atendidos</p>
@@ -100,99 +104,109 @@
     <div class="wrapper pb-10">
       <header>
         <h4 class="text-sm font-bold tracking-wider uppercase text-primary mb-4">Serviços</h4>
-        <h2 class="text-3xl font-semibold text-gray-dark mb-16">Como podemos ajudá-lo a se sentir melhor?</h2>
+        <h2 class="text-3xl font-semibold text-gray-dark mb-16 lg:text-4xl lg:w-96 lg:mx-auto">Como podemos ajudá-lo a se sentir melhor?</h2>
       </header>
 
-      <div class="cards flex flex-col gap-8">
+      <div class="cards flex flex-col gap-8 lg:grid lg:grid-cols-3">
         <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
           <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
 
           <h3 class="my-4 text-2xl font-semibold">Problemas digestivos</h3>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          <p class="text-base">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
         </div>
         <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
           <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
 
           <h3 class="my-4 text-2xl font-semibold">Saúde Hormonal</h3>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          <p class="text-base">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
         </div>
         <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
           <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
 
           <h3 class="my-4 text-2xl font-semibold">Bem-estar mental</h3>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          <p class="text-base">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
         </div>
         <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
           <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
 
           <h3 class="my-4 text-2xl font-semibold">Cuidados Pediátricos</h3>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          <p class="text-base">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
         </div>
         <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
           <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
 
           <h3 class="my-4 text-2xl font-semibold">Autoimune e Inflamação</h3>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          <p class="text-base">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
         </div>
         <div class="card p-6 text-left bg-white border border-primary-light rounded-md">
           <i class="ph-check text-primary text-base p-1 bg-primary-light rounded-full"></i>
 
           <h3 class="my-4 text-2xl font-semibold">Saúde do Coração</h3>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          <p class="text-base">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section id="about" class="text-left bg-white">
-    <div class="wrapper">
-      <header>
-        <h4 class="text-sm font-bold tracking-wider uppercase text-primary mb-4">Sobre nós</h4>
-        <h2 class="text-3xl font-semibold text-gray-dark mb-6">Entenda quem somos e por que existimos</h2>
-      </header>
+    <div class="wrapper lg:grid lg:grid-cols-2 lg:gap-14">
+      <div class="col-start-2">
+        <header>
+          <h4 class="text-sm font-bold tracking-wider uppercase text-primary mb-4">Sobre nós</h4>
+          <h2 class="text-3xl font-semibold text-gray-dark mb-6">Entenda quem somos e por que existimos</h2>
+        </header>
+  
+        <div class="content">
+          <p class="mt-6 mb-14">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+        </div>
+      </div>
 
-      <div class="content">
-        <p class="mt-6 mb-14">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-        
+      <div class="col-start-1 row-start-1">
         <img class="rounded-xl" src="assets/about-image.png" alt="Doutor feliz segurando prancheta com pacientes" />
       </div>
     </div>
   </section>
 
   <section id="contact" class="text-left">
-    <div class="wrapper">
-      <header class="mb-8">
-        <h2 class="text-3xl font-semibold text-gray-dark mb-6">Entre em contato com a gente!</h2>
-      </header>
+    <div class="wrapper lg:grid lg:grid-cols-2 lg:gap-14">
+      <div class="col-start-1">
+        <header class="mb-8">
+          <h2 class="text-3xl font-semibold text-gray-dark mb-6">Entre em contato com a gente!</h2>
+        </header>
+  
+        <div class="content">
+          <ul class="flex flex-col gap-4">
+            <li class="flex items-center gap-2 font-normal text-base text-gray">
+              <i class="ph-map-pin text-primary"></i>
+              R. Amauri Souza, 346
+            </li>
+            <li class="flex items-center gap-2 font-normal text-base text-gray">
+              <i class="ph-envelope-simple text-primary"></i>
+              contato@doctorcare.com
+             </li>
+          </ul>
+  
+          <a href="https://wa.me/5521981625423" target="_blank" class="bg-primary rounded-3xl mb-24 py-3 px-8 text-gray-light tracking-wider text-center text-sm font-semibold uppercase flex items-center justify-center gap-4 mt-8 w-fit hover:bg-primary-dark transition-colors">
+            <i class="ph-whatsapp-logo"></i>
+            Agende sua consulta
+          </a>
+        </div>
+      </div>
 
-      <div class="content">
-        <ul class="flex flex-col gap-4">
-          <li class="flex items-center gap-2 font-normal text-base text-gray">
-            <i class="ph-map-pin text-primary"></i>
-            R. Amauri Souza, 346
-          </li>
-          <li class="flex items-center gap-2 font-normal text-base text-gray">
-            <i class="ph-envelope-simple text-primary"></i>
-            contato@doctorcare.com
-           </li>
-        </ul>
-
-        <a href="https://wa.me/5521981625423" target="_blank" class="bg-primary rounded-3xl mb-24 py-3 px-8 text-gray-light tracking-wider text-center text-sm font-semibold uppercase flex items-center justify-center gap-4 mt-8 w-fit hover:bg-primary-dark transition-colors">
-          <i class="ph-whatsapp-logo"></i>
-          Agende sua consulta
-        </a>
-
-        <img class="rounded-xl" src="assets/contact-image.png" alt="Homem negro com moletom bege mexendo no celular e sorrindo" />
+      <div class="col-start-2">
+        <img class="rounded-xl lg:float-right" src="assets/contact-image.png" alt="Homem negro com moletom bege mexendo no celular e sorrindo" />
       </div>
     </div>
   </section>
 
   <footer class="bg-primary py-14 text-left">
-    <div class="wrapper">
-      <a class="logo w-full mb-7 inline-block text-white" href="#">{{ logo }}</a>
+    <div class="wrapper lg:flex lg:justify-between">
+      <div>
+        <a class="logo w-full mb-7 inline-block text-white" href="#">{{ logo }}</a>
 
-      <p class="text-primary-light mb-1">©2022 Beautysalon.</p>
-      <p class="text-primary-light mb-8">Todos os direitos reservados.</p>
+        <p class="text-primary-light mb-1">©2022 Beautysalon.</p>
+        <p class="text-primary-light mb-8">Todos os direitos reservados.</p>
+      </div>
   
       <ul class="flex items-center justify-start gap-12 text-white">
         <li class="hover:scale-105 transition-transform">

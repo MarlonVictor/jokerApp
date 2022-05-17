@@ -43,7 +43,7 @@ module.exports = {
         ...primaryColors[0],
         'gray-light': '#F7F9F9',
         'gray': '#384633',
-        'gray-dark': '#061800'
+        'gray-dark': '#22262A'
       }
     },
   },

@@ -24,6 +24,7 @@ var navLinks = document.querySelectorAll('a[href^="#"]');
 btnOpenNav === null || btnOpenNav === void 0 ? void 0 : btnOpenNav.addEventListener('click', function () { return document.body.classList.add('menu-expanded'); });
 btnCloseNav === null || btnCloseNav === void 0 ? void 0 : btnCloseNav.addEventListener('click', function () { return document.body.classList.remove('menu-expanded'); });
 navLinks === null || navLinks === void 0 ? void 0 : navLinks.forEach(function (link) { return link.addEventListener('click', function () { return document.body.classList.remove('menu-expanded'); }); });
+// Change Active Menu Item
 function activateMenuAtCurrentSection(section) {
     var targetLine = scrollY + innerHeight / 2;
     var sectionEl = document.querySelector(section);
