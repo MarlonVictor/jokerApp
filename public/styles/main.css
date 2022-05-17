@@ -15,8 +15,8 @@ html {
 }
 
 .wrapper {
-  width: 30rem;
-  @apply mx-auto px-10;
+  width: min(32rem, 100%);
+  @apply mx-auto px-5 sm:px-10;
 }
 
 #home::before {
@@ -44,4 +44,37 @@ section p {
 
 a.show {
   @apply opacity-80 visible translate-y-0;
+}
+
+
+@media (min-width: 1024px) {
+  .wrapper {
+    width: min(70rem, 100%);
+  }
+
+  nav.scroll .menu a {
+    @apply text-white;
+  }
+
+  nav .menu li a::after {
+    content: '';
+    height: 2px;
+    bottom: -1.125rem;
+    transition: width .15s;
+
+    @apply bg-primary w-0 relative block;
+  } 
+
+  nav.scroll .menu li a::after {
+    @apply bg-white;
+  }
+
+  nav .menu li a.active::after,
+  nav .menu li a:hover::after {
+    @apply w-full;
+  }
+
+  nav.scroll .menu > a:hover {
+    @apply border-transparent brightness-110;
+  }
 }

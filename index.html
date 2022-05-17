@@ -22,18 +22,18 @@
 <body class="font-poppins text-center bg-primary-lighter">
   <nav class="flex fixed top-0 w-full left-2/4 -translate-x-2/4 transition-colors" style="height: var(--nav-height)">
     <div class="wrapper flex items-center justify-between">
-      <a class="logo w-full text-left" href="#">{{ logo }}</a>
+      <a class="logo w-full text-left lg:w-auto" href="#">{{ logo }}</a>
 
-      <div class="menu transition-opacity duration-500">
-        <ul class="flex flex-col gap-12 mt-20 font-bold text-2xl font-semibold text-white">
-          <li class="hover:scale-105 transition-transform"><a href="#home">Início</a></li>
-          <li class="hover:scale-105 transition-transform"><a href="#services">Serviços</a></li>
-          <li class="hover:scale-105 transition-transform"><a href="#about">Sobre</a></li>
+      <div class="menu fixed transition-opacity duration-500 lg:flex lg:items-center lg:justify-between lg:opacity-100 lg:visible lg:relative lg:w-3/5">
+        <ul class="flex flex-col gap-12 mt-20 font-bold text-2xl font-semibold text-white lg:flex-row lg:mt-0 lg:text-base lg:font-normal lg:text-primary">
+          <li class="hover:scale-105 transition-transform lg:hover:scale-100 lg:transition-none"><a class="active" href="#home">Início</a></li>
+          <li class="hover:scale-105 transition-transform lg:hover:scale-100 lg:transition-none"><a href="#services">Serviços</a></li>
+          <li class="hover:scale-105 transition-transform lg:hover:scale-100 lg:transition-none"><a href="#about">Sobre</a></li>
         </ul>
 
-        <a class="bg-white rounded-3xl font-semibold text-lg uppercase text-primary inline-block py-3 px-8 mt-12 mb-20 w-fit hover:bg-primary hover:text-white border transition-colors" href="#contact">Agende sua consulta</a>
+        <a class="bg-white rounded-3xl font-semibold text-lg uppercase text-primary inline-block py-3 px-8 mt-12 mb-20 w-fit hover:bg-primary hover:text-white border transition-colors lg:m-0 lg:px-6 lg:py-2 lg:text-sm lg:bg-transparent lg:text-primary" href="#contact">Agende sua consulta</a>
 
-        <ul class="flex items-center justify-center gap-12 text-white">
+        <ul class="flex items-center justify-center gap-12 text-white md:hidden">
           <li class="hover:scale-105 transition-transform">
             <a href="https://instagram.com/">
               <i class="ph-instagram-logo"></i>
@@ -52,11 +52,11 @@
         </ul>
       </div>
   
-      <button area-label="Abrir menu" data-open>
+      <button class="lg:hidden" area-label="Abrir menu" data-open>
         <i class="ph-list"></i>
       </button>
 
-      <button area-label="Fechar menu" data-close>
+      <button class="fixed lg:hidden" area-label="Fechar menu" data-close>
         <i class="ph-x"></i>
       </button>
     </div>
@@ -79,7 +79,7 @@
         class="w-64 block mx-auto"
       />
   
-      <div class="stats p-10 mx-auto bg-gray-light border border-primary-light rounded-lg flex flex-col justify-center gap-16" style="width: 20.5rem">
+      <div class="stats p-10 mx-auto bg-gray-light border border-primary-light rounded-lg flex flex-col justify-center gap-16">
         <div>
           <h3 class="text-5xl font-semibold text-gray-dark mb-2">+3.500</h3>
           <p class="m-0 text-primary text-base">Pacientes atendidos</p>
@@ -177,7 +177,7 @@
            </li>
         </ul>
 
-        <a href="https://wa.me/5521981625423" target="_blank" class="bg-primary rounded-3xl mb-24 py-3 px-8 text-gray-light tracking-wider text-sm font-semibold uppercase flex items-center justify-center gap-4 mt-8 w-fit hover:bg-primary-dark transition-colors">
+        <a href="https://wa.me/5521981625423" target="_blank" class="bg-primary rounded-3xl mb-24 py-3 px-8 text-gray-light tracking-wider text-center text-sm font-semibold uppercase flex items-center justify-center gap-4 mt-8 w-fit hover:bg-primary-dark transition-colors">
           <i class="ph-whatsapp-logo"></i>
           Agende sua consulta
         </a>

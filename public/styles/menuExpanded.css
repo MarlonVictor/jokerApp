@@ -26,7 +26,7 @@ body.menu-expanded [data-close] {
 }
 
 body.menu-expanded .menu {
-    @apply fixed top-0 left-0 bg-primary w-screen h-screen;
+    @apply w-auto fixed top-0 left-0 bg-primary w-screen h-screen;
     padding-top: var(--nav-height);
 }
 

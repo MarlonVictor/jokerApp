@@ -1,11 +1,16 @@
 // Scroll Animation
 const navigationElement = document.querySelector('nav')
-const navigationClasses = ['w-screen', 'bg-primary', 'text-white']
+const navigationClasses = ['scroll', 'w-screen', 'bg-primary', 'text-white']
 
 const backToTopButton = document.querySelector('#backToTop')
 const backToTopClass = 'show'
 
 document.body.onscroll = () => {
+    activateMenuAtCurrentSection('#home')
+    activateMenuAtCurrentSection('#services')
+    activateMenuAtCurrentSection('#about')
+    activateMenuAtCurrentSection('#contact')
+
     scrollY > 50 
         ? navigationElement?.classList.add(...navigationClasses)
         : navigationElement?.classList.remove(...navigationClasses)
@@ -25,6 +30,29 @@ btnOpenNav?.addEventListener('click', () => document.body.classList.add('menu-ex
 btnCloseNav?.addEventListener('click', () => document.body.classList.remove('menu-expanded'))
 navLinks?.forEach(link => link.addEventListener('click', () => document.body.classList.remove('menu-expanded')))
 
+
+// Change Active Menu Item
+function activateMenuAtCurrentSection(section: string) {
+    const targetLine = scrollY + innerHeight / 2
+
+    const sectionEl = document.querySelector(section) as HTMLElement
+    const sectionTop = sectionEl?.offsetTop
+    const sectionHeight = sectionEl?.offsetHeight
+    const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
+
+    const sectionEndsAt = sectionTop + sectionHeight
+    const sectionEndPassedTargetline = sectionEndsAt <= targetLine
+
+    const sectionBoundaries = sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
+
+    const sectionId = sectionEl.getAttribute('id')
+    const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`) as HTMLElement
+
+    menuElement.classList.remove('active')
+    if (sectionBoundaries) {
+        menuElement.classList.add('active')
+    }
+}
 
 // Init Scroll Reveal Animation
 const scrollRevealConfig = {
